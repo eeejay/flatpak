@@ -479,7 +479,7 @@ setup_sdk_repo () {
 install_repo () {
     REPONAME=${1:-test}
     BRANCH=${2:-master}
-    ${FLATPAK} ${U} install -y ${REPONAME}-repo org.test.Platform ${BRANCH} >&2
+    # ${FLATPAK} ${U} install -y ${REPONAME}-repo org.test.Platform ${BRANCH} >&2
     ${FLATPAK} ${U} install -y ${REPONAME}-repo org.test.Hello ${BRANCH} >&2
 }
 

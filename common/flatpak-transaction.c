@@ -2454,7 +2454,7 @@ op_get_runtime_ref (FlatpakTransactionOperation *op)
 
   if (!op->resolved_metakey)
     return NULL;
-
+  // HERE
   /* Generally only app needs runtimes dependencies, not dependencies because you don't run extensions directly.
      However if the extension has extra data (and doesn't define NoRuntime) its also needed so we can run the
      apply-extra script. */
