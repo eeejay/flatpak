@@ -225,6 +225,10 @@ name=${APP_ID}.Plugin.fun
 
 [ExtensionOf]
 ref=app/$APP_ID/$ARCH/$BRANCH
+runtime=$APP_ID/$ARCH/$BRANCH
+
+[Extra Data]
+foo=bar
 EOF
 
 mkdir -p ${DIR}/files/plug-ins/fun

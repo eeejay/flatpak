@@ -2464,6 +2464,7 @@ op_get_runtime_ref (FlatpakTransactionOperation *op)
            !g_key_file_get_boolean (op->resolved_metakey, "Extra Data", "NoRuntime", NULL))
     runtime_pref = g_key_file_get_string (op->resolved_metakey, "ExtensionOf", "runtime", NULL);
 
+  printf("eeejay %s\n", runtime_pref);
   if (runtime_pref == NULL)
     return NULL;
 

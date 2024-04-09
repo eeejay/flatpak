@@ -31,6 +31,7 @@ echo "1..2"
 setup_repo "" "" stable
 $FLATPAK remote-ls test-repo ${U}
 ${FLATPAK} ${U} install -y test-repo org.test.Hello.Plugin.fun v1 >&2
+# ${FLATPAK} ${U} install -y test-repo org.test.Hello stable >&2
 echo eh
 $FLATPAK list ${U} 
 exit(1)
